@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Api from './api/Api';
+import ApiChampion from './api/ApiChampion';
 function App() {
   return (
     <div className="App">
-      <Api />
+      <ApiChampion />
 
     </div>
   );
