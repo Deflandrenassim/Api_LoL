@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import ApiChampion from './api/ApiChampion';
+import ContainsChampions from '../src/container/Champions/ContainsChampions';
 function App() {
   return (
     <div className="App">
-      <ApiChampion />
+
+      <ContainsChampions />
 
     </div>
   );
