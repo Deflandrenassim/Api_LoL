@@ -1,23 +1,25 @@
 import React from 'react'
-
+import './CardChampions.css';
 
 export const CardContainer = ({ children }) => {
     return (
-        <div> {children} </div>
+        <div className="card_container"> {children} </div>
     )
 }
 export const CardChampions = ({ children }) => {
     return (
-        <div className="card_champions">{children}</div>
+        <div className="card_champions">
+            {children}
+        </div>
     )
 }
 export const NameChampions = ({ children }) => {
     return (
-        <span> {children}</span>
+        <span className="name_champions"> {children}</span>
     )
 }
-export const ImgChampions = ({ src, alt }) => {
+export const ImgChampions = ({ src, alt, key }) => {
     return (
-        <img src={src} alt={alt} />
+        <img className="img_champions" src={src} alt={alt} key={key} />
     )
 }

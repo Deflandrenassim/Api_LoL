@@ -1,21 +1,23 @@
 import React from 'react'
 import ApiChampion from '../../api/ApiChampion';
-
+import './ContainsChampions.css';
+import { CardContainer, NameChampions, ImgChampions, CardChampions } from '../../component/CardChampions/CardChampions';
 const ContainsChampions = () => {
 
     const apiChampions = ApiChampion();
     console.log(apiChampions);
     return (
-        <div>
-            <ul>
+        <div className="contains_champions">
+            <CardContainer>
                 {apiChampions.map((champ, key) => (
-                    <div key={key}>
-                        <img src={champ.icon} />
-                        <p> {champ.name}</p>
-                    </div>
+                    <CardChampions>
+                        <ImgChampions src={champ.icon} />
+                        <NameChampions key={key}> {champ.name}</NameChampions>
+                    </CardChampions>
                 ))}
-            </ul>
+            </CardContainer>
         </div>
+
     )
 }
 export default ContainsChampions;

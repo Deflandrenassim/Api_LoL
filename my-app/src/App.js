@@ -3,9 +3,7 @@ import ContainsChampions from '../src/container/Champions/ContainsChampions';
 function App() {
   return (
     <div className="App">
-
       <ContainsChampions />
-
     </div>
   );
 }
