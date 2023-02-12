@@ -23,3 +23,5 @@ export const ImgChampions = ({ src, alt, key }) => {
         <img className="img_champions" src={src} alt={alt} key={key} />
     )
 }
+
+/* Ton composant est propre au champion donc ça n'est pas le composant idéal, un composant doit etre générique */

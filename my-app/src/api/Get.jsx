@@ -1,13 +1,14 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 
-export const Get = () => {
-    const id = 'nassimdef';
-    axios.get(`https://euw1.api.riotgames.com/lol/riot/account/v1/accounts/by-puuid/${id}`)
-        .then((response) => {
-            console.log('ma response', response);
+const id = 'nassimdef';
+export const useGet = () => {
+    const [response, setResponse] = useState();
+    useEffect(()=>{
+        axios.get(`https://euw1.api.riotgames.com/lol/riot/account/v1/accounts/by-puuid/${id}`)
+        .then((apiResponse) => {
+            setResponse(apiResponse)
         })
-    return (
-        <div>Get</div>
-    )
+    },[])
+    return [response, setResponse]
 }

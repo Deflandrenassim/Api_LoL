@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import champions from 'lol-champions';
 
 
-const ApiChampion = () => {
-    const [state] = useState(champions);
-    return state;
+const getChampions = () => {
+    return champions;
 }
-export default ApiChampion;
+export default getChampions;
