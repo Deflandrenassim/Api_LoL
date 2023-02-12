@@ -1,10 +1,11 @@
 import React from 'react'
-import ApiChampion from '../../api/ApiChampion';
+import getChampions from '../../api/ApiChampion';
 import './ContainsChampions.css';
 import { CardContainer, NameChampions, ImgChampions, CardChampions } from '../../component/CardChampions/CardChampions';
+import getChampions from '../../api/ApiChampion';
 const ContainsChampions = () => {
 
-    const apiChampions = ApiChampion();
+    const apiChampions = getChampions();
     console.log(apiChampions);
     return (
         <div className="contains_champions">
