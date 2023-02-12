@@ -1,23 +1,14 @@
 .card_container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
     border-radius: solid 3px red;
-    box-shadow: 0 4px 8px 0 rgba(151, 150, 150, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.2);
     background-color: #17172e15;
-    width: 35vh;
+    width: 75vh;
 }
-
-/* .card_champions {
-
-    /* display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 12px 12px;
-    padding: 20px;
-    border: 1px solid var(--border-color-grey);
-    background-color: */
-
 
 .img_champions {
     display: flex;
@@ -26,6 +17,7 @@
 }
 
 .name_champions {
+    font-size: 12px;
     display: flex;
     justify-content: center;
     color: white;
@@ -35,4 +27,15 @@
     height: 10vh;
     width: 10vh;
     cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .card_container {
+        width: 43vh;
+    }
+
+    .img_champions {
+        height: 10vh;
+        width: 10vh;
+    }
 }

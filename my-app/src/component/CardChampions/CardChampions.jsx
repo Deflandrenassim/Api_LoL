@@ -18,8 +18,10 @@ export const NameChampions = ({ children }) => {
         <span className="name_champions"> {children}</span>
     )
 }
-export const ImgChampions = ({ src, alt, key }) => {
+export const ImgChampions = ({ src, alt, key, children }) => {
     return (
-        <img className="img_champions" src={src} alt={alt} key={key} />
+        <img className="img_champions" src={src} alt={alt} key={key}>
+            {children}
+        </img>
     )
 }

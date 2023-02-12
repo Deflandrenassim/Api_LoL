@@ -1,10 +1,10 @@
 import React from 'react'
-import ApiChampion from '../../api/ApiChampion';
+import champions from 'lol-champions';
 import './ContainsChampions.css';
 import { CardContainer, NameChampions, ImgChampions, CardChampions } from '../../component/CardChampions/CardChampions';
 const ContainsChampions = () => {
 
-    const apiChampions = ApiChampion();
+    const apiChampions = champions;
     console.log(apiChampions);
     return (
         <div className="contains_champions">
