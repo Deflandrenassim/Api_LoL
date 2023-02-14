@@ -1,19 +1,22 @@
 import React from 'react'
-import champions from 'lol-champions';
+import { useChampions } from '../../hook/useChampions';
+import { Link } from 'react-router-dom';
 import './ContainsChampions.css';
 import { CardContainer, NameChampions, ImgChampions, CardChampions } from '../../component/CardChampions/CardChampions';
+
 const ContainsChampions = () => {
 
-    const apiChampions = champions;
-    console.log(apiChampions);
+    const apiChampions = useChampions();
     return (
         <div className="contains_champions">
             <CardContainer>
                 {apiChampions.map((champ, key) => (
-                    <CardChampions>
-                        <ImgChampions src={champ.icon} />
-                        <NameChampions key={key}> {champ.name}</NameChampions>
-                    </CardChampions>
+                    <Link to={`/champion/${champ.name}`}>
+                        <CardChampions>
+                            <ImgChampions src={champ.icon} />
+                            <NameChampions key={key}> {champ.name}</NameChampions>
+                        </CardChampions>
+                    </Link>
                 ))}
             </CardContainer>
         </div>
