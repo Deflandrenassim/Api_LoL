@@ -4,13 +4,13 @@ import { useChampions } from '../../hook/useChampions';
 
 export const Champions = () => {
 
-    const { id } = useParams();
+    const id = useParams();
     const champion = useChampions(id);
     console.log('mon console', champion);
     return (
         <div className="champions">
-            <div> {champion.description} </div>
 
+            <div> test</div>
         </div>
     )
 }

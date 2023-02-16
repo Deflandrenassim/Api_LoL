@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import './NavBarContainer.css';
-import { NavBar } from '../../component/NavBar/NavBar';
+import { NavbarNavigate } from './Navigate/NavbarNavigate';
 import { Button } from '../../component/Button/Button';
 
 export const NavbarContainer = () => {
-    const [open, setOpen] = useState(false);
+    const [toggle, setToggle] = useState(false);
+    console.log(toggle);
 
-    const handleOpenAndClose = (e) => {
-        console.log(e.target.value);
-        console.log(open)
-        setOpen(!open);
-    }
     return (
-        <>
-            <NavBar>
-                <Button onClick={handleOpenAndClose}> LOL </Button>
-            </NavBar>
-        </>
+        <div>
+            <Button onClick={() => setToggle(!toggle)}> LOL </Button>
+            {toggle && <NavbarNavigate />}
+        </div>
 
     )
 }

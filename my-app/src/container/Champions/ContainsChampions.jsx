@@ -2,7 +2,7 @@ import React from 'react'
 import { useChampions } from '../../hook/useChampions';
 import { Link } from 'react-router-dom';
 import './ContainsChampions.css';
-import { CardContainer, NameChampions, ImgChampions, CardChampions } from '../../component/CardChampions/CardChampions';
+import { CardContainer, Card, CardImg, CardName } from '../../component/Card/Card';
 
 const ContainsChampions = () => {
 
@@ -11,11 +11,11 @@ const ContainsChampions = () => {
         <div className="contains_champions">
             <CardContainer>
                 {apiChampions.map((champ, key) => (
-                    <Link to={`/champion/${champ.name}`}>
-                        <CardChampions>
-                            <ImgChampions src={champ.icon} />
-                            <NameChampions key={key}> {champ.name}</NameChampions>
-                        </CardChampions>
+                    <Link key={key} to={`/champion/${champ.name}`}>
+                        <Card>
+                            <CardImg src={champ.icon} />
+                            <CardName> {champ.name}</CardName>
+                        </Card>
                     </Link>
                 ))}
             </CardContainer>
