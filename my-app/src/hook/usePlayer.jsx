@@ -3,10 +3,9 @@ import axios from 'axios';
 
 export const usePlayer = (user) => {
     const [player, setPlayer] = useState(user);
-    const api_key = "RGAPI-017a80f1-b597-429e-8e0b-324489fe5013";
 
     useEffect(() => {
-        axios.get("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + user + "?api_key=" + api_key)
+        axios.get("https://euw1.api.riotgames.com/lol/summoner/v4/summoners/by-name/" + user + "?api_key=" + process.env.REACT_APP_API_KEY)
             .then(response => {
                 setPlayer(response.data);
             });
