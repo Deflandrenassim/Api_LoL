@@ -6,11 +6,9 @@ export const Champions = () => {
 
     const id = useParams();
     const champion = useChampions(id);
-    console.log('mon console', champion);
+    // console.log('mon console', champion);
     return (
         <div className="champions">
-
-            <div> test</div>
         </div>
     )
 }

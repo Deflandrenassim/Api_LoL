@@ -2,8 +2,9 @@ import React from 'react'
 import './Button.css'
 
 
-export const Button = ({ children, type, onClick }) => {
+const Button = ({ children, type, onClick, design }) => {
     return (
-        <button className="button" type={type} onClick={onClick} >{children}</button>
+        <button className={`button ${design}`} type={type} onClick={onClick} >{children}</button>
     )
 }
+export default Button;

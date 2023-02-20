@@ -2,11 +2,12 @@ import React from 'react'
 import { useChampions } from '../../hook/useChampions';
 import { Link } from 'react-router-dom';
 import './ContainsChampions.css';
-import { CardContainer, Card, CardImg, CardName } from '../../component/Card/Card';
+import { CardContainer, Card, CardImg, CardTitle } from '../../component/Card/Card';
 
 const ContainsChampions = () => {
 
     const apiChampions = useChampions();
+    console.log(apiChampions);
     return (
         <div className="contains_champions">
             <CardContainer>
@@ -14,7 +15,7 @@ const ContainsChampions = () => {
                     <Link key={key} to={`/champion/${champ.name}`}>
                         <Card>
                             <CardImg src={champ.icon} />
-                            <CardName> {champ.name}</CardName>
+                            <CardTitle> {champ.name}</CardTitle>
                         </Card>
                     </Link>
                 ))}

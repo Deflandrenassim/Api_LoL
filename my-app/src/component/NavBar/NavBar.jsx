@@ -3,7 +3,7 @@ import './Navbar.css';
 
 export const Navbar = ({ children }) => {
     return (
-        <div className="navbar">
+        <div className="navbar_component">
             {children}
         </div>
     )

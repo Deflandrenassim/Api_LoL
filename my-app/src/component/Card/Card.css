@@ -10,13 +10,18 @@
     width: 75vh;
 }
 
-.img_champions {
+.card_img {
     display: flex;
     flex-direction: row;
+    height: 15vh;
     padding: 5px;
 }
 
-.name_champions {
+.card_img:hover {
+    height: 18vh;
+}
+
+.card_title {
     font-size: 12px;
     display: flex;
     justify-content: center;

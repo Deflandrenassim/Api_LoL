@@ -1,4 +1,5 @@
 .contains_champions {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }

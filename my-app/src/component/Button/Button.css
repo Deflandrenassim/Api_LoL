@@ -2,3 +2,14 @@
     cursor: pointer;
     color: red;
 }
+
+.button.design {
+    height: 5vh;
+    width: 8vh;
+    color: white;
+    box-shadow: 10px 5px 5px rgba(54, 33, 105, 0.459);
+    border-radius: 10px 10px;
+    background-color: blueviolet;
+    list-style: none;
+    border: 1px solid violet;
+}

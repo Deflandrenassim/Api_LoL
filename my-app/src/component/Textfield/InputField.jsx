@@ -1,7 +1,8 @@
 import React from 'react'
 
-export const InputField = () => {
+const InputField = ({ children, type, onChange, onClick, placeHolder }) => {
     return (
-        <input>InputField</input>
+        <input type={type} onChange={onChange} onClick={onClick} placeHolder={placeHolder}>{children}</input>
     )
 }
+export default InputField;

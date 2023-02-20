@@ -1,10 +1,11 @@
 import React from 'react';
 import ContainsChampions from '../../container/Champions/ContainsChampions';
-import { NavbarContainer } from '../../container/Modal/NavbarContainer';
+import { Navbar } from '../../container/Navbar/Navbar';
+
 export const Home = () => {
     return (
         <div>
-            <NavbarContainer />
+            <Navbar />
             <ContainsChampions />
         </div>
 

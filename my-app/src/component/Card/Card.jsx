@@ -13,14 +13,14 @@ export const Card = ({ children }) => {
         </div>
     )
 }
-export const CardName = ({ children }) => {
+export const CardTitle = ({ children }) => {
     return (
-        <span className="name_champions"> {children}</span>
+        <h3 className="card_title"> {children}</h3>
     )
 }
 export const CardImg = ({ src, alt, }) => {
     return (
-        <img className="img_champions" src={src} alt={alt}>
-        </img>
+        <img className="card_img" src={src} alt={alt} />
+
     )
 }
