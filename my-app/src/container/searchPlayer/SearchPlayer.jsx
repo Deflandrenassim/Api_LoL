@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+import './SearchPlayer.css';
 import InputField from '../../component/Textfield/InputField';
-import { CardTitle, CardImg, } from '../../component/Card/Card';
+import { Title, Description } from '../../component/Title/Title';
+import { Picture } from '../../component/Picture/Picture';
 import { usePlayer } from '../../hook/usePlayer';
 import { Navbar } from '../../container/Navbar/Navbar';
+
+
 export const SearchPlayer = () => {
 
     const [value, setValue] = useState("");
@@ -10,11 +14,13 @@ export const SearchPlayer = () => {
 
     return (
         <div className="search_player">
+            <Title> Welcome To Page for search gamers </Title>
+            <Description> On this page you could find the level information of each league of legend players on your keyboard </Description>
             <Navbar />
-            <InputField onChange={e => setValue(e.target.value)} placeHolder="Recherche un joueur :)" />
-            <CardTitle> Nom du joueur: {player.name}</CardTitle>
-            <CardTitle> Niveau  : {player.summonerLevel}</CardTitle>
-            <CardImg src={"http://ddragon.leagueoflegends.com/cdn/13.3.1/img/profileicon/"
+            <InputField variant="variant" onChange={e => setValue(e.target.value)} placeholder="Recherche un joueur :)" />
+            <Title> Nom du joueur: {player.name}</Title>
+            <Description> Niveau  : {player.summonerLevel}</Description>
+            <Picture src={"http://ddragon.leagueoflegends.com/cdn/13.3.1/img/profileicon/"
                 + player.profileIconId + ".png"} />
         </div>
     )

@@ -5,10 +5,10 @@ import Button from '../../component/Button/Button';
 
 export const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    console.log(toggle)
+
     return (
-        <div className="navbar">
-            <Button design="design" onClick={() => setToggle(!toggle)}> LOL </Button>
+        <div className="Navbar">
+            <Button variant="variant" onClick={() => setToggle(!toggle)}> LOL </Button>
             {toggle && <NavbarNavigate />}
         </div>
 

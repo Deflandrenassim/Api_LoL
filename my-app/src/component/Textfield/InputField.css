@@ -1,0 +1,12 @@
+.input.variant {
+    background-color: rgba(80, 14, 141, 0.328);
+    color: white;
+    font-size: 20px;
+    height: 5vh;
+    width: 80vh;
+    font-size: 20px;
+    list-style: none;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px 60px 10px 24px;
+    border: none;
+}

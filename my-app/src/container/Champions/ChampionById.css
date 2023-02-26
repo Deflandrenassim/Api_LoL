@@ -1,0 +1,20 @@
+.champion_by_id {
+    padding: 20px;
+}
+
+.champion_by_name {
+    display: flex;
+    justify-content: center;
+}
+
+.champion_by_flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.champion_by_tag {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}

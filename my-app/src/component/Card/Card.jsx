@@ -1,9 +1,9 @@
 import React from 'react'
 import './Card.css';
 
-export const CardContainer = ({ children }) => {
+export const CardContainer = ({ children, variant }) => {
     return (
-        <div className="card_container"> {children} </div>
+        <div className={`card_container ${variant}`}> {children} </div>
     )
 }
 export const Card = ({ children }) => {

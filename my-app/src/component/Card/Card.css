@@ -1,13 +1,16 @@
 .card_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 20px;
     flex-wrap: wrap;
     border-radius: solid 3px red;
     box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.2);
-    background-color: #17172e15;
-    width: 75vh;
+    background-color: #dbdbe615;
+}
+
+.card_container.variant {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vh;
 }
 
 .card_img {
@@ -18,14 +21,15 @@
 }
 
 .card_img:hover {
-    height: 18vh;
+    height: 16vh;
 }
 
 .card_title {
-    font-size: 12px;
+    font-size: 15px;
     display: flex;
     justify-content: center;
     color: white;
+    list-style: none;
 }
 
 .img_champions {
