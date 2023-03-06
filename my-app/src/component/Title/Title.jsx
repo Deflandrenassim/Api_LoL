@@ -6,9 +6,9 @@ export const Title = ({ children, variant, size }) => {
         <h1 className={`title ${variant} ${size}`}>{children}</h1>
     )
 }
-export const SousTitle = ({ children }) => {
+export const SousTitle = ({ children, position }) => {
     return (
-        <h2> {children}</h2>
+        <h2 className={`sous_title ${position}`}> {children}</h2>
     )
 }
 export const Description = ({ children }) => {

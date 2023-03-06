@@ -10,6 +10,7 @@
 .champion_by_flex {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     justify-content: space-around;
 }
 
@@ -19,9 +20,7 @@
     margin-right: 20px;
 }
 
-.champion_stats {
-    display: flex;
-
-    justify-content: center;
-
+.champion_combat {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

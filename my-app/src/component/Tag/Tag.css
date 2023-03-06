@@ -12,3 +12,7 @@
     background-color: rgba(135, 196, 176, 0.691);
     color: white;
 }
+
+.tag.padding {
+    padding-bottom: 10px;
+}
