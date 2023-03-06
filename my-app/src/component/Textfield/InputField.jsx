@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import './InputField.css';
 
-export const InputField = () => {
+const InputField = ({ children, type, onChange, onClick, placeholder, variant }) => {
     return (
-        <input>InputField</input>
+        <input className={`input ${variant}`} type={type} onChange={onChange} onClick={onClick}
+            placeholder={placeholder}>
+            {children}
+        </input>
     )
 }
+export default InputField;

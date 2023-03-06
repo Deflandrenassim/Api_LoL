@@ -1,0 +1,46 @@
+.card_container {
+    padding: 20px;
+    flex-wrap: wrap;
+    border-radius: solid 3px red;
+    box-shadow: 0 4px 8px 0 rgba(188, 188, 188, 0.2);
+    background-color: #dbdbe615;
+}
+
+.card_container.variant {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50vh;
+}
+
+.card_img {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    padding: 5px;
+}
+
+.card_title {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style: none;
+}
+
+.img_champions {
+    height: 10vh;
+    width: 10vh;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .card_container {
+        width: 43vh;
+    }
+
+    .img_champions {
+        height: 10vh;
+        width: 10vh;
+    }
+}

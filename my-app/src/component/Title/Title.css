@@ -1,0 +1,16 @@
+.title {
+    color: white;
+}
+
+.title.variant {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.description {
+    color: white;
+}
