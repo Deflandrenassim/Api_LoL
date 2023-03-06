@@ -20,10 +20,6 @@
     padding: 5px;
 }
 
-.card_img:hover {
-    height: 16vh;
-}
-
 .card_title {
     font-size: 15px;
     display: flex;

@@ -18,3 +18,10 @@
     flex-direction: row;
     margin-right: 20px;
 }
+
+.champion_stats {
+    display: flex;
+
+    justify-content: center;
+
+}
