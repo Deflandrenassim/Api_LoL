@@ -14,11 +14,9 @@ export const ChampionById = () => {
     const { id } = useParams();
     const champions = useAllChampions();
 
-
-
     const filter = champions.filter(champions => champions.id === id);
     let champion = filter[0];
-    console.log(champion);
+    console.log(champion)
 
     if (!champion) return null
 
@@ -42,13 +40,14 @@ export const ChampionById = () => {
                             <SousTitle variant="variant"> The Perfomance Start : </SousTitle>
                             <div className='champion_stats'>
                                 <Tag padding="padding"> HP: <Note>{champion.stats.hp} </Note></Tag>
-                                <Tag> ATTACK : <Note>{champion.stats.attackdamage}</Note></Tag>
-                                <Tag> ARMOR : <Note> {champion.stats.armor}</Note></Tag>
+                                <Tag padding="padding"> ATTACK : <Note>{champion.stats.attackdamage}</Note></Tag>
+                                <Tag padding="padding"> ARMOR : <Note> {champion.stats.armor}</Note></Tag>
+                                <Tag padding="padding"> ARMOR : <Note> {champion.info.difficulty}</Note></Tag>
                             </div>
                             <div className="champion_combat">
-                                <Tag> ATTACK RANGE : <Note> {champion.stats.attackrange} </Note></Tag>
-                                <Tag> LEVEL ARMOR  :  <Note> {champion.stats.armorperlevel} </Note></Tag>
-                                <Tag> SPEED MOVE <Note> {champion.stats.movespeed}</Note></Tag>
+                                <Tag padding="padding"> ATTACK RANGE : <Note> {champion.stats.attackrange} </Note></Tag>
+                                <Tag padding="padding"> LEVEL ARMOR  :  <Note> {champion.stats.armorperlevel} </Note></Tag>
+                                <Tag padding="padding"> SPEED MOVE <Note> {champion.stats.movespeed}</Note></Tag>
                             </div>
                         </FlexCenter>
                     </div>

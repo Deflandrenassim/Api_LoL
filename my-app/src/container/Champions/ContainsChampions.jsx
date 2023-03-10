@@ -6,7 +6,6 @@ import './ContainsChampions.css';
 
 const ContainsChampions = () => {
     const champions = useAllChampions();
-    console.log("mon cls", champions);
 
     if (!champions) return null;
 
